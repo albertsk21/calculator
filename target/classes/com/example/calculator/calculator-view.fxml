@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="312.0" styleClass="main" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.controller.ButtonsController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="125.0" prefHeight="302.0" prefWidth="284.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="button7" onAction="#pressButton7" prefHeight="82.0" prefWidth="85.0" text="7" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button8" onAction="#pressButton8" prefHeight="89.0" prefWidth="99.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button9" onAction="#pressButton9" prefHeight="101.0" prefWidth="93.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="buttonDivide" onAction="#divide" prefHeight="120.0" prefWidth="108.0" styleClass="btn" text=":" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button4" onAction="#pressButton4" prefHeight="105.0" prefWidth="110.0" text="4" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button5" onAction="#pressButton5" prefHeight="106.0" prefWidth="99.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button6" onAction="#pressButton6" prefHeight="91.0" prefWidth="97.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="buttonMultiply" onAction="#multiply" prefHeight="87.0" prefWidth="104.0" styleClass="btn" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <JFXButton fx:id="button1" onAction="#pressButton1" prefHeight="88.0" prefWidth="97.0" text="1" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button2" onAction="#pressButton2" prefHeight="114.0" prefWidth="81.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="button3" onAction="#pressButton3" prefHeight="101.0" prefWidth="112.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="buttonAdd" onAction="#add" prefHeight="101.0" prefWidth="100.0" styleClass="btn" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <JFXButton fx:id="buttonDeleteAll" onAction="#deleteAll" prefHeight="103.0" prefWidth="109.0" styleClass="btn" text="c" GridPane.columnIndex="1" />
+            <JFXButton fx:id="button0" onAction="#pressButton0" prefHeight="146.0" prefWidth="159.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="buttonMinus" onAction="#minus" prefHeight="130.0" prefWidth="135.0" styleClass="btn" text="-" GridPane.columnIndex="2" />
+            <JFXButton fx:id="buttonEqual" onAction="#equal" prefHeight="138.0" prefWidth="135.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="equal-btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="deleteChar" onAction="#deleteChar" prefHeight="120.0" prefWidth="108.0" styleClass="btn" text="&lt;" GridPane.columnIndex="3" />
+            <JFXButton fx:id="buttonDot" onAction="#addDot" prefHeight="120.0" prefWidth="108.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="number-btn" />
+                  <String fx:value="number-btn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton onAction="#deleteRecentDigits" prefHeight="120.0" prefWidth="108.0" styleClass="btn" text="ce" />
+            <JFXButton prefHeight="120.0" prefWidth="108.0" styleClass="number-btn" text=" " GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TextField fx:id="textField" alignment="CENTER_RIGHT" editable="false" layoutX="4.0" layoutY="41.0" prefHeight="75.0" prefWidth="305.0" style="-fx-font-size: 25px; -fx-background-color: -fx-control-inner-background;" />
+      <HBox alignment="TOP_RIGHT" layoutX="1.0" prefHeight="26.0" prefWidth="312.0" styleClass="top-window">
+         <children>
+            <Label  contentDisplay="RIGHT" prefHeight="20.0" prefWidth="122.0" style="-fx-text-fill: #fff; -fx-font-size: 14px;" text="Simple Calculator">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="8.0" right="12.0" top="3.0" />
+               </HBox.margin></Label>
+            <AnchorPane prefHeight="24.0" prefWidth="115.0" />
+            <JFXButton fx:id="hideWindowButton" defaultButton="true" onAction="#hideWindow" prefHeight="40.0" prefWidth="40.0" styleClass="hide-window-button" text="_" />
+            <JFXButton fx:id="closeButton" onAction="#closeWindow" prefHeight="40.0" prefWidth="40.0" style="-fx-border-width: 0px;" styleClass="close-button" text="x" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

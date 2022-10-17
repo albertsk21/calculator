@@ -1,0 +1,39 @@
+.main{
+    -fx-background-color: #0F3460;
+}
+
+.close-button{
+    -fx-background-color: #D2001A;
+    -fx-font-size: 12px;
+    -fx-text-fill: #fff;
+}
+.hide-window-button{
+    -fx-background-color: #fff;
+    -fx-font-size: 12px;
+}
+
+
+.btn{
+    -fx-text-fill: #fff;
+    -fx-font-size: 18px
+}
+.top-window{
+    -fx-background-color: #0c2a4d;
+}
+
+.text-field{
+    -fx-control-inner-background: #274870
+}
+.text-field:focused{
+    -fx-control-inner-background: #274870
+}
+.text-field:filled{
+    -fx-control-inner-background: #274870
+}
+
+.number-btn{
+    -fx-background-color: #0c2a4d;
+}
+.equal-btn{
+    -fx-background-color: #991b1b;
+}
